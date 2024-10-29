@@ -7,30 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <title>CK Portfolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="js/nav.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "FyEeXS0QI1SoFXm6Y",
+      });
+   })();
+</script>
 </head>
 
 <body>
@@ -54,9 +44,11 @@
                     <a class="nav-link nav-custom-link" href="#about-me">About</a>
                 </li>
                 <li class="nav-item navigation-list">
-                    <a class="nav-link nav-custom-link" href="#my-portfolio">Portfolio</a>
+                    <a class="nav-link nav-custom-link" href="#my-portfolio">Projects</a>
                 </li>
-                
+                <li class="nav-item navigation-list">
+                    <a class="nav-link nav-custom-link" href="#mycer">Certifications</a>
+                </li>
                 <li class="nav-item navigation-list">
                     <a class="nav-link nav-custom-link" href="#section-contact">Contact</a>
                 </li>
@@ -66,16 +58,16 @@
     <!-- Navbar End -->
 
     <main class="container-fluid main p-0">
-        <!-- SECTION NO 1 -->
-        <section class="container-fluid section-1">
-            <div class="row section-1-inner">
-                <div class="col section-1-inner-col">
-                    <div class="image-frame mx-auto my-5">
-                    </div>
-                </div>
+      <!-- SECTION NO 1 -->
+<!-- SECTION NO 1 -->
+<section class="container-fluid section-1">
+    <div class="row section-1-inner">
+        <div class="col section-1-inner-col">
+            <div class="image-frame mx-auto my-5">
             </div>
-        </section>
-
+        </div>
+    </div>
+</section>
 
         <!-- SECTION NO 2 -->
         <section id="about-me" class="container-fluid section-2">
@@ -87,7 +79,7 @@
                     <div class="paragraph mx-auto mt-2">
                         "I am Chandrashekar K R, an enthusiastic engineering student with a passion for evolving technologies. As a skilled full-stack developer and data analyst, I bring a comprehensive understanding of both front-end and back-end development, coupled with strong analytical abilities. My experience in diverse technology stacks and data analysis tools enables me to craft efficient solutions and derive actionable insights. I am eager to leverage my technical expertise and innovative mindset to contribute to dynamic and forward-thinking projects."
                     </div>
-                    <a type="button" class="section-2-button fw-bold">Read More</a>
+                    
                 </div>
             </div>
         </section>
@@ -120,30 +112,33 @@
                             Application that transforms the traditional parking experience by enabling users to reserve parking spaces remotely. This innovative solution aims to streamline and modernize the process of securing parking spaces, eliminating the need for users to wait in queues at physical parking locations .Where it reduces number of employees and save time.
                         </div>
                         <div class="section-6-button">
-                            <a class="sec6-btn text-uppercase fw-bold" onclick="location.href='https://devfolio.co/projects/parkease-8456'">View Project</a>
+                            <a class="sec6-btn text-uppercase fw-bold" href="https://devfolio.co/projects/parkease-8456" target="_blank">View Project</a>
                         </div>
+                        
                     </div>
                     <div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
-                        <a href="https://devfolio.co/projects/parkease-8456"><img src="./images/ck3.png" class="img-fluid sec6-image" alt=""></a>
+                        <a href="https://devfolio.co/projects/parkease-8456" target="_blank"><img src="./images/ck3.png" class="img-fluid sec6-image" alt=""></a>
                     </div>
                 </div>
     
                 <div class="row section-6-inner mx-auto mt-5">
                     <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
                         <div class="section-6-heading">
-                            <span class="fw-bold">ExpenseX: </span> Simple Java Expense Tracker System
+                            <span class="fw-bold">Online E-Commerce Price Comparison Website </span> <br>Amazon Vs Flipkart
                         </div>
                         <div class="section-6-para">
-                            ExpenseX is a Java-based application designed to streamline expense management. The system allows users to efficiently track their expenditures by providing functionalities to add, view, update, and delete expense records. It facilitates the recording of essential expense details, including amount, date, category, and location.
-    
+                            As part of this project, I developed a web-based platform that simplifies product price comparison across leading e-commerce websites like Amazon and Flipkart. By integrating APIs, the system fetches product data, including prices and ratings, and displays them in real-time, allowing users to quickly identify the best deals without manually visiting multiple sites.
     
                         </div>
                         <div class="section-6-button">
-                            <a class="sec6-btn text-uppercase fw-bold" onclick="location.href='https://ck-257.github.io/Personal-Portfolio-Page/javaminproject.pdf'">View Project</a>
+                            <a class="sec6-btn text-uppercase fw-bold" href="https://github.com/CkTechTitans/Online-E-commerce-price-comparison-system" target="_blank">
+                                View Project
+                            </a>
                         </div>
+                        
                     </div>
                     <div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
-                        <a href="https://ck-257.github.io/Personal-Portfolio-Page/javaminproject.pdf"><img src="./images/ck4.png" class="img-fluid sec6-image" alt=""></a>
+                        <a href="https://github.com/CkTechTitans/Online-E-commerce-price-comparison-system" target="_blank"><img src="./images/ck9.png" class="img-fluid sec6-image" alt=""></a>
                     </div>
                 </div>
     
@@ -160,10 +155,12 @@
         
 
         <!-- Divider -->
-        <div class="bold-line"></div>
+         <br>
+         <br>
+        <div class="bold-line" id="mycer"></div>
 
 
-        
+        <div id="certificate"></div>
             <div class="row">
                 <div class="col text-center">
                     <div class="sec5-portfolio-head">
@@ -171,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <div id="certificate"></div>
+            
 
             <div class="row mt-4 mt-md-5 work-gallery-row">
                 <div class="masonry">
@@ -180,7 +177,7 @@
                         <img src="./images/ck2.png" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
+                                <a class="grid__link" target="_blank" href="https://coursera.org/share/0073738a6e17b07a2361c1967525098b"></a>
                                 <p class="grid__author">Google Data analyst</p>
                             </div>
                             <div class="mt-auto">
@@ -193,7 +190,7 @@
                         <img src="./images/nptelcertificate.png" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
+                                <a class="grid__link" target="_blank" href="./images/nptelcertificate.png"></a>
                                 <p class="grid__author">Design and analysis of algorithm</p>
                             </div>
                             <div class="mt-auto">
@@ -206,7 +203,7 @@
                         <img src="./images/chandrashekar k r azure certificate.png" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
+                                <a class="grid__link" target="_blank" href="./images/chandrashekar k r azure certificate.png"></a>
                                 <p class="grid__author">Attended Workshop</p>
                             </div>
                             <div class="mt-auto">
@@ -221,18 +218,19 @@
                 </div>
             </div>
 
-            <div class="row">
+         <!--  <div class="row">
                 <div class="section-5-button mt-4 mt-sm-5 text-center">
                     <button class="sec5-btn text-uppercase fw-bold" onclick="location.href='#certificate'">View More</button>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <!-- SECTION NO 6 -->
         
 
         <!-- SECTION CONTACT -->
-        
+        <br>
+        <br>
         <section id="section-contact" class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
@@ -245,52 +243,48 @@
                 </div>
             </div>
         
-        <div class="row card-row-2">
-            <div class="col-lg-6 contact-image">
+            <div class="row card-row-2">
+                <div class="col-lg-6 contact-image">
+                    <!-- You can add a contact-related image here if needed -->
+                </div>
+                <div class="col-lg-6 contact-form-div">
+                    <form id="contact-form" onsubmit="event.preventDefault(); sendMail();" class="contact-form">
+                        <!-- Name Input -->
+                        <div class="form-group mt-3 mt-sm-4">
+                            <input type="text" name="name" id="custom-input1" class="form-control" placeholder="Your Name" required>
+                        </div>
+            
+                        <!-- Email Input -->
+                        <div class="form-group mt-3 mt-sm-4">
+                            <input type="email" name="email" id="custom-input2" class="form-control" placeholder="Your Email" required>
+                        </div>
+            
+                        <!-- Subject Input -->
+                        <div class="form-group mt-3 mt-sm-4">
+                            <input type="text" name="subject" id="custom-input3" class="form-control" placeholder="Subject" required>
+                        </div>
+            
+                        <!-- Message Input -->
+                        <div class="form-group mt-3 mt-sm-4">
+                            <textarea name="message" id="custom-textarea" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+            
+                        <!-- Submit Button -->
+                        <div class="form-group mt-3 mt-sm-4 form-button">
+                            <input type="submit" value="Send Message" id="contact-custom-button" class="btn">
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col-lg-6 contact-form-div">
-                <form action="send_mail.php" method="post" class="contact-form">
-                    <div class="form-group mt-3 mt-sm-4">
-                        <input type="text" name="name" id="custom-input1" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group mt-3 mt-sm-4">
-                        <input type="email" name="email" id="custom-input2" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group mt-3 mt-sm-4">
-                        <input type="text" name="subject" id="custom-input3" class="form-control" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group mt-3 mt-sm-4">
-                        <textarea name="message" id="custom-textarea" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="form-group mt-3 mt-sm-4 form-button">
-                        <input type="submit" value="Send Message" id="contact-custom-button" class="btn">
-                    </div>
-                </form>
-            </div>
-        </div>
+        </section>
         
 
 
         <!-- SECTION NO 7 -->
-        <section class="container-fluid section-7">
-            <div class="row section-7-inner mx-auto text-center">
-                <div class="col">
-                    <div class="section-7-text">
-                        If u want to stay in touch with me! Please follow me on social media so we can keep in touch.
-                    </div>
-                    <div class="section-7-icons">
-                        <a href="#" class="social-icons"><i class="bi bi-facebook icons"></i></a>
-                        <a href="#" class="social-icons"><i class="bi bi-twitter icons"></i></a>
-                        <a href="#" class="social-icons"><i class="bi bi-instagram icons"></i></a>
-                        <a href="#" class="social-icons"><i class="bi bi-linkedin icons"></i></a>
-                        <a href="#" class="social-icons"><i class="bi bi-pinterest icons"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+       
         
     </main>
+    <script src="./css/script.js"></script>
 </body>
 
 </html>
