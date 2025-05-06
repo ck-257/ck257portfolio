@@ -17,7 +17,7 @@
 <script type="text/javascript">
    (function(){
       emailjs.init({
-        publicKey: "FyEeXS0QI1SoFXm6Y",
+        publicKey: process.env.EMAILJS_PUBLIC_KEY || "placeholder",
       });
    })();
 </script>
