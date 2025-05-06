@@ -2,31 +2,30 @@ name: Build and Deploy
 
 on:
   push:
-    branches: [ main ]  # or master, depending on your default branch name
+    branches: [ main ]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
-
+      - uses: actions/checkout@v3
+      
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-          
+      
       - name: Install Dependencies
         run: npm install
         
-      - name: Build
+      - name: Replace Secrets
         env:
           EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
-        run: npm run build
+        run: node replace-secrets.js
       
+      # Continue with your deployment steps...
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist  # or your build output directory
+          folder: . # or your build output directory
           branch: gh-pages
-          token: ${{ secrets.GITHUB_TOKEN }}
